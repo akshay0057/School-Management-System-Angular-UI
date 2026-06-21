@@ -1,0 +1,51 @@
+<div
+  class="sidebar"
+  [class.collapsed]="isCollapsed">
+
+  <div class="sidebar-header">
+
+    <button
+      class="toggle-btn"
+      (click)="toggleSidebar()">
+
+      ☰
+
+    </button>
+
+  </div>
+
+  <ul class="menu">
+
+    <li>
+      <span>🏠</span>
+      <span *ngIf="!isCollapsed">Dashboard</span>
+    </li>
+
+    <li>
+      <span>🎓</span>
+      <span *ngIf="!isCollapsed">Students</span>
+    </li>
+
+    <li>
+      <span>👨‍🏫</span>
+      <span *ngIf="!isCollapsed">Teachers</span>
+    </li>
+
+    <li>
+      <span>📅</span>
+      <span *ngIf="!isCollapsed">Attendance</span>
+    </li>
+
+    <li>
+      <span>🏫</span>
+      <span *ngIf="!isCollapsed">Classes</span>
+    </li>
+
+    <li>
+      <span>💰</span>
+      <span *ngIf="!isCollapsed">Fees</span>
+    </li>
+
+  </ul>
+
+</div>

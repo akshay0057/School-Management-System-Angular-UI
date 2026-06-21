@@ -1,0 +1,58 @@
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+
+    <div class="container-fluid">
+
+        <a class="navbar-brand fw-bold" routerLink="/dashboard">
+
+            School Management App
+        </a>
+
+        <div class="dropdown">
+
+            <button
+                class="btn btn-light dropdown-toggle"
+                data-bs-toggle="dropdown">
+
+                👤 {{userName}}
+
+            </button>
+
+            <ul class="dropdown-menu dropdown-menu-end">
+
+                <li>
+
+                    <a
+                        class="dropdown-item"
+                        routerLink="/profile">
+
+                        My Profile
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <hr class="dropdown-divider">
+
+                </li>
+
+                <li>
+
+                    <button
+                        class="dropdown-item text-danger"
+                        (click)="logout()">
+
+                        Logout
+
+                    </button>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
